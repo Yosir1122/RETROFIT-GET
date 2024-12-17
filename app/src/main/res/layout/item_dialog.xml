@@ -26,9 +26,7 @@
         android:id="@+id/bajarildi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bajarildi"
-        android:textSize="25sp"
-        android:textStyle="bold"
+        android:layout_gravity="center"
         tools:ignore="UseSwitchCompatOrMaterialXml" />
 
     <androidx.cardview.widget.CardView

@@ -72,7 +72,11 @@ class MainActivity : AppCompatActivity() {
                                 itemDialog.apply {
                                     edtTitle.setText(myTodo.sarlavha)
                                     edtIzoh.setText(myTodo.izoh)
-                                    bajarildi.isChecked
+                                    if (myTodo.bajarildi){
+                                        bajarildi.isChecked=true
+                                    }else{
+                                        bajarildi.isChecked=false
+                                    }
                                     btnSave.setOnClickListener {
                                         val myTodoPostRequest = MyTodoPostRequest(
                                             bajarildi.isChecked,
